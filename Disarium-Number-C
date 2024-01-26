@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int n=175,rem;
+    int a=n,b=n;
+    int c=0;
+    int sum=0;
+    while(n>0){
+        c++;
+        n/=10;}
+    while(a>0){
+        rem = a%10;int p=1;int l=c;
+    while(l--){
+        p=p*rem;}
+    sum+=p;
+    a/=10;
+    c--;}
+    printf((sum==b)?"Disarium number":"not a Disarium number");
+    return 0;
+}
